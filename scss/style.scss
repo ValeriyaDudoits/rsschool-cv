@@ -1,0 +1,428 @@
+p, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+p, span {
+    font-size: 18px;
+}
+
+h2 {
+    text-align: left;
+    padding: 0 20px;
+    background-color:rgb(226, 195, 155) ;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: rgb(253, 253, 253);
+}
+
+.container {
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(255, 245, 233);
+}
+
+//header ----------------------------------------------------
+
+header {
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 0;
+        font-size: 18px;
+        background-color: rgb(226, 195, 155);
+
+        .header_name {
+            margin-left: 20px;
+        }
+
+        nav {
+            margin-right: 20px;
+                
+            ul {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                box-sizing: border-box;
+
+                li {
+                    list-style-type: none;
+                    padding-left: 20px;
+
+                        a:hover {
+                            color: rgb(181, 87, 0);
+                            border-bottom: solid 1px rgb(181, 87, 0); 
+                        }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1115px) {
+    header {
+
+        .container {
+
+            .header_name {
+                min-width: 121.5px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 875px) {
+    header {
+
+        .container {
+            font-size: 16px;
+
+            nav {
+                max-width: 700px;
+
+                ul {
+                    flex-wrap: wrap;
+
+                    li {
+                        padding: 10px 0 0 25px;
+                    }
+                }
+            }   
+        }
+    }
+}
+
+@media all and (max-width: 422px) {
+    header {
+
+        .container {
+
+            .header_name {
+                min-width: 100px;
+            }
+
+            nav {
+
+                ul {
+                    flex-direction: column;
+
+
+                    li {
+                        padding: 10px 0 0 0;
+                        
+                        a {
+                            text-align: left;
+                        }
+                    }
+                }
+            }   
+        }
+    }
+}
+
+//main_information --------------------------------------------
+
+.main_information {
+
+    .container {
+        padding: 15px 0;
+
+        .main_information__block {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: left;
+
+            .main_information__block__photo {
+                margin: 0 20px;
+
+                img {
+                    height: 320px;
+                    width: 243px;
+                }
+            }
+
+            .main_information__block__common {
+                width: 70%;
+                align-items: left;
+
+                h1 {
+                    text-align: center;
+                    margin: 15px 0;
+                }
+
+                ul {
+                    padding-left: 20px;
+
+                    li {
+                        text-align: left;
+                        margin: 7px 0; 
+                        list-style-type: none; 
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+                }
+
+
+
+                .main_information__mobile_photo {
+                    display: none;
+                }
+
+                div {
+                    margin: 15px 0;
+
+                }
+
+                .phone, .email {
+                    margin: 7px ;
+                    text-align: left;
+                    font-weight: bold;
+                    font-size: 18px;
+
+                    a:hover {
+                        color: rgb(181, 87, 0);
+                        border-bottom: solid 1px rgb(181, 87, 0); 
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 524px) {
+    .main_information {
+
+        .container {
+
+            .main_information__block {
+
+                .main_information__block__photo{
+
+                    img {
+                        height: 256px;
+                        width: 195px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 455px) {
+    .main_information {
+
+        .container {
+
+            .main_information__block {
+
+                .main_information__block__photo{
+                    align-self: center;
+                    
+                    img {
+                        height: 213px;
+                        width: 162px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 445px) {
+    .main_information {
+
+        .container {
+
+            .main_information__block {
+
+                .main_information__block__common{
+                    width: 100%;
+
+                    .main_information__mobile_photo {
+                        display: flex;
+                        justify-content: flex-start;
+                        margin-left: 20px;
+
+                        img {
+                            height: 256px;
+                            width: 195px;
+                        }
+                    }
+                }
+
+                .main_information__block__photo {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+//Summary -----------------------------------------------------------
+
+.summary {
+
+    .container {
+
+        div {
+            margin-bottom: 15px ;
+        }
+
+        p {
+            padding: 0 20px 15px 20px;
+            text-align: left;
+        }
+    }
+}
+
+//Technical Skills ----------------------------------------------
+
+.technical_skills {
+
+    .container{
+
+        div {
+            margin-bottom: 15px ;
+        }
+
+        p {
+            text-align: left;
+            padding: 0 20px 15px 20px;
+            font-weight: bold;
+
+            span {
+                font-weight: normal;
+            }
+        }
+    }
+}
+
+//Education ------------------------------------------
+
+.education {
+
+    .container {
+
+        div {
+            margin-bottom: 15px ;
+        }
+
+        p {
+            text-align: left;
+            padding: 0 20px 15px 20px;
+        }
+    }
+}
+
+//Work experience ------------------------------------
+
+.work_experience {
+
+    .container {
+        div {
+            margin-bottom: 15px ;
+        }
+
+        p {
+            text-align: left;
+            padding: 0 20px 15px 20px;
+            font-weight: bold;
+
+            span {
+                font-weight: normal;
+            }
+
+            a {
+                font-weight: normal;
+
+                &:hover {
+                    color: rgb(181, 87, 0);
+                    border-bottom: solid 1px rgb(181, 87, 0); 
+                }
+            }
+        }
+
+    }
+}
+
+@media all and (max-width: 370px) {
+    .work_experience {
+
+        .container {
+    
+            p {
+
+                a {
+                   font-size: 16px; 
+                }
+            }
+        }
+    }
+}
+
+//Languages --------------------------------------------
+
+.languages {
+
+    .container {
+
+        div {
+            margin-bottom: 15px ;
+        }
+
+        p {
+            text-align: left;
+            padding: 0 20px 15px 20px;
+            font-weight: bold;
+
+            span {
+                font-weight: normal;
+           }
+        }
+    }
+}
+
+//Additional Information ----------------------------------
+
+.additional_information {
+
+    .container {
+
+        div {
+            margin-bottom: 15px;
+        }
+
+        p {
+            text-align: left;
+            padding: 0 20px 15px 20px;
+            font-weight: bold;
+
+            span {
+                font-weight: normal;
+            }
+
+            a {
+                font-weight: normal;
+
+                &:hover {
+                    color: rgb(181, 87, 0);
+                    border-bottom: solid 1px rgb(181, 87, 0); 
+                }
+            }
+        }
+    }
+}
