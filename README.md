@@ -1,1 +1,1 @@
-# rsschool-cv
+https://ValeriyaDudoits.github.io/rsschool-cv/cv
