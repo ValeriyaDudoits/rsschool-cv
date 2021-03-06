@@ -1,0 +1,263 @@
+p, h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+p, span {
+  font-size: 18px;
+}
+
+h2 {
+  text-align: left;
+  padding: 0 20px;
+  background-color: #e2c39b;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #fdfdfd;
+}
+
+.container {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff5e9;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  font-size: 18px;
+  background-color: #e2c39b;
+}
+header .container .header_name {
+  margin-left: 20px;
+}
+header .container nav {
+  margin-right: 20px;
+}
+header .container nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+}
+header .container nav ul li {
+  list-style-type: none;
+  padding-left: 20px;
+}
+header .container nav ul li a:hover {
+  color: #b55700;
+  border-bottom: solid 1px #b55700;
+}
+
+@media all and (max-width: 1115px) {
+  header .container .header_name {
+    min-width: 121.5px;
+  }
+}
+@media all and (max-width: 875px) {
+  header .container {
+    font-size: 16px;
+  }
+  header .container nav {
+    max-width: 700px;
+  }
+  header .container nav ul {
+    flex-wrap: wrap;
+  }
+  header .container nav ul li {
+    padding: 10px 0 0 25px;
+  }
+}
+@media all and (max-width: 422px) {
+  header .container .header_name {
+    min-width: 100px;
+  }
+  header .container nav ul {
+    flex-direction: column;
+  }
+  header .container nav ul li {
+    padding: 10px 0 0 0;
+  }
+  header .container nav ul li a {
+    text-align: left;
+  }
+}
+.main_information .container {
+  padding: 15px 0;
+}
+.main_information .container .main_information__block {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: left;
+}
+.main_information .container .main_information__block .main_information__block__photo {
+  margin: 0 20px;
+}
+.main_information .container .main_information__block .main_information__block__photo img {
+  height: 320px;
+  width: 243px;
+}
+.main_information .container .main_information__block .main_information__block__common {
+  width: 70%;
+  align-items: left;
+}
+.main_information .container .main_information__block .main_information__block__common h1 {
+  text-align: center;
+  margin: 15px 0;
+}
+.main_information .container .main_information__block .main_information__block__common ul {
+  padding-left: 20px;
+}
+.main_information .container .main_information__block .main_information__block__common ul li {
+  text-align: left;
+  margin: 7px 0;
+  list-style-type: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+.main_information .container .main_information__block .main_information__block__common .main_information__mobile_photo {
+  display: none;
+}
+.main_information .container .main_information__block .main_information__block__common div {
+  margin: 15px 0;
+}
+.main_information .container .main_information__block .main_information__block__common .phone, .main_information .container .main_information__block .main_information__block__common .email {
+  margin: 7px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 18px;
+}
+.main_information .container .main_information__block .main_information__block__common .phone a:hover, .main_information .container .main_information__block .main_information__block__common .email a:hover {
+  color: #b55700;
+  border-bottom: solid 1px #b55700;
+}
+
+@media all and (max-width: 524px) {
+  .main_information .container .main_information__block .main_information__block__photo img {
+    height: 256px;
+    width: 195px;
+  }
+}
+@media all and (max-width: 455px) {
+  .main_information .container .main_information__block .main_information__block__photo {
+    align-self: center;
+  }
+  .main_information .container .main_information__block .main_information__block__photo img {
+    height: 213px;
+    width: 162px;
+  }
+}
+@media all and (max-width: 445px) {
+  .main_information .container .main_information__block .main_information__block__common {
+    width: 100%;
+  }
+  .main_information .container .main_information__block .main_information__block__common .main_information__mobile_photo {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+  }
+  .main_information .container .main_information__block .main_information__block__common .main_information__mobile_photo img {
+    height: 256px;
+    width: 195px;
+  }
+  .main_information .container .main_information__block .main_information__block__photo {
+    display: none;
+  }
+}
+.summary .container div {
+  margin-bottom: 15px;
+}
+.summary .container p {
+  padding: 0 20px 15px 20px;
+  text-align: left;
+}
+
+.technical_skills .container div {
+  margin-bottom: 15px;
+}
+.technical_skills .container p {
+  text-align: left;
+  padding: 0 20px 15px 20px;
+  font-weight: bold;
+}
+.technical_skills .container p span {
+  font-weight: normal;
+}
+
+.education .container div {
+  margin-bottom: 15px;
+}
+.education .container p {
+  text-align: left;
+  padding: 0 20px 15px 20px;
+}
+
+.work_experience .container div {
+  margin-bottom: 15px;
+}
+.work_experience .container p {
+  text-align: left;
+  padding: 0 20px 15px 20px;
+  font-weight: bold;
+}
+.work_experience .container p span {
+  font-weight: normal;
+}
+.work_experience .container p a {
+  font-weight: normal;
+}
+.work_experience .container p a:hover {
+  color: #b55700;
+  border-bottom: solid 1px #b55700;
+}
+
+@media all and (max-width: 370px) {
+  .work_experience .container p a {
+    font-size: 16px;
+  }
+}
+.languages .container div {
+  margin-bottom: 15px;
+}
+.languages .container p {
+  text-align: left;
+  padding: 0 20px 15px 20px;
+  font-weight: bold;
+}
+.languages .container p span {
+  font-weight: normal;
+}
+
+.additional_information .container div {
+  margin-bottom: 15px;
+}
+.additional_information .container p {
+  text-align: left;
+  padding: 0 20px 15px 20px;
+  font-weight: bold;
+}
+.additional_information .container p span {
+  font-weight: normal;
+}
+.additional_information .container p a {
+  font-weight: normal;
+}
+.additional_information .container p a:hover {
+  color: #b55700;
+  border-bottom: solid 1px #b55700;
+}
+
+/*# sourceMappingURL=style.css.map */
